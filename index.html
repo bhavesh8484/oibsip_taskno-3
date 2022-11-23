@@ -1,49 +1,30 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
 <html lang="en" dir="ltr">
- 
-<head>̥
-  <meta charset="utf-8">
-  <title>Simple Calculator using HTML, CSS and JavaScript</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
- 
-<body>
- 
-<table class="calculator" >
-  <tr>
-    <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+  <head>
+    <meta charset="utf-8">  
+    <title>Todo List App in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconscout Link For Icons -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="task-input">
+        <input type="text" placeholder="Add a new task">
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
 
-    <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
-  </tr>
-  <tr>
-    <td> <input type="button" value="1" onclick="display('1')" /> </td>
-    <td> <input type="button" value="2" onclick="display('2')" /> </td>
-    <td> <input type="button" value="3" onclick="display('3')" /> </td>
-    <td> <input type="button" value="/" onclick="display('/')" /> </td>
-  </tr>
-  <tr>
-    <td> <input type="button" value="4" onclick="display('4')" /> </td>
-    <td> <input type="button" value="5" onclick="display('5')" /> </td>
-    <td> <input type="button" value="6" onclick="display('6')" /> </td>
-    <td> <input type="button" value="-" onclick="display('-')" /> </td>
-  </tr>
-  <tr>
-    <td> <input type="button" value="7" onclick="display('7')" /> </td>
-    <td> <input type="button" value="8" onclick="display('8')" /> </td>
-    <td> <input type="button" value="9" onclick="display('9')" /> </td>
-    <td> <input type="button" value="+" onclick="display('+')" /> </td>
-  </tr>
-  <tr>
-    <td> <input type="button" value="." onclick="display('.')" /> </td>
-    <td> <input type="button" value="0" onclick="display('0')" /> </td>
+    <script src="script.js"></script>
 
-    <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
-    <td> <input type="button" value="*" onclick="display('*')" /> </td>
-  </tr>
-</table>
- 
-<script type="text/javascript" src="script.js"></script>
- 
-</body>
- 
+  </body>
 </html>
